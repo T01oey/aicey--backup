@@ -1,7 +1,7 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?> 
 <footer id="footer" class="footer">
  <?php if ($this->options->time){ ?><span>博客已萌萌哒运行</span><span id=span_dt_dt></span><?php };?>
-<br>© <?php echo date('Y'); ?>&nbsp;由&nbsp;<a target="_blank" href="http://typecho.org">Typecho</a> 强力驱动.Theme by <a target="_blank" id="cpy" href="https://aicey.net"><?php echo Yodu_name; ?></a><?php if ($this->options->footerwen): ?><?php $this->options->footerwen(); ?><?php endif; ?> 
+<br>© <?php echo date('Y'); ?>&nbsp;由&nbsp;<a target="_blank" href="http://typecho.org">Typecho</a> 强力驱动.Theme by <a target="_blank" id="cpy" href="http://qqdie.com/archives/yodu.html"><?php echo Yodu_name; ?></a><?php if ($this->options->footerwen): ?><?php $this->options->footerwen(); ?><?php endif; ?> 
 </footer>
 </div>
 <?php if (!empty($this->options->sidebarBlock) && !in_array('guantool', $this->options->sidebarBlock)): ?><?php if($this->is('post')||$this->is('page')&&!$this->is('page', 'archives')&&!$this->is('page', 'categories')&&!$this->is('page', 'tags')): ?>
